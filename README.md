@@ -2,7 +2,7 @@
 This is a version of BCAI which only has the minimum files required to run the program and compiled binaries rather than source code to run.
 
 ## How to install
-Run installMinimal.bash using:
+Do not clone the repo, just download/copy [installMinimal.bash](installMinimal.bash). Then run installMinimal.bash using:
 
     sudo bash installMinimal.bash
 
