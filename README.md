@@ -36,8 +36,9 @@ Create a python3 script subject to the following restrictions:
 * The script must allow for a single integer command line argument:
 	* If the input is 0 then the program should train the model
 	* If the input is 1 then the program should evaluate the model
-* Any packages must be written in the requirements.txt file
+* Any packages must be written in the [requirements.txt](ML/createImage/Dockerfile/requirements.txt) file
 	* Note this must use the pip3 file based install format
+	* For example, if your script uses tensorflow, you must add a line in [requirements.txt](ML/createImage/Dockerfile/requirements.txt) that says tensorflow
 	
 For an example of a script that follows these conditions, see [our example script](ML/createImage/example.py)
 
