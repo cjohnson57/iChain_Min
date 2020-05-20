@@ -2,13 +2,15 @@
 This is a version of BCAI which only has the minimum files required to run the program and compiled binaries rather than source code to run.
 
 ## How to install
-Run installRequirements.bash using:
+Run installMinimal.bash using:
 
-    sudo bash installRequirements.bash
+    sudo bash installMinimal.bash
 
-Besides that, simply clone this repo into a folder. In that same folder, clone the [onionshare repo.](https://github.com/micahflee/onionshare) Remember, you should be able to see the BCAI_Min and onionshare folders in the same directory.
+This will install all required softwares and this repository as well as the onionshare repository.
 
+For a full list of things installed, see the comment block at the top of [installMinimal.bash](installMinimal.bash)
 
+Also, place one or more keystore files for the account(s) you want to use in ML/localUser and ML/localWorker
 
 ## How to run user
 Users upload ML tasks to be performed by providers and pay them in ether cryptocurrency.
