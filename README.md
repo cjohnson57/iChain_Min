@@ -1,9 +1,14 @@
-# BCAI
-This is a LSU project.
+# BCAI_Min
+This is a version of BCAI which only has the minimum files required to run the program and compiled binaries rather than source code to run.
 
 ## How to install
-Take file install.bash and run with ```sudo bash install.bash``` in the directory which you would like the BCAI directory to be.
-It will download this repo, the onionshare repo, and install all required software/pip3 packages/npm packages needed to run the project.
+Run installRequirements.bash using:
+
+    sudo bash installRequirements.bash
+
+Besides that, simply clone this repo into a folder. In that same folder, clone the [onionshare repo.](https://github.com/micahflee/onionshare) Remember, you should be able to see the BCAI_Min and onionshare folders in the same directory.
+
+
 
 ## How to run user
 Users upload ML tasks to be performed by providers and pay them in ether cryptocurrency.
@@ -48,30 +53,6 @@ In the main directory run ```bash startWorker.bash``` this will open two termina
 In the CLI you can either continue using the CLI to use the program or open the web page.
 
 Once you start providing, no interaction is needed to continue completing tasks.
-
-## Important Code
-
-### User
-
-User CLI interface: [userCLI.js](ML/localUser/userCLI.js)
-
-User file host/transfer: [execute.py](ML/localUser/execute.py)
-
-User web page (js, html, css): [WebPage](ML/localUser/WebPage)
-
-### Provider
-
-Provider CLI interface: [workerCLI.js](ML/localWorker/workerCLI.js)
-
-Provider file host/transfer: [execute.py](ML/localWorker/execute.py)
-
-Provider web page (js, html, css): [WebPage](ML/localWorker/WebPage)
-
-### Other
-
-Smart contract: [bcai.sol](bcai_deploy/contracts/bcai.sol)
-
-Install script: [install.bash](install.bash)
 
 ## Other info
 Please do not close any of the terminals or the web page until you have finished/stopped your request or providing.
