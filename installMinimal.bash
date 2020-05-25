@@ -1,4 +1,4 @@
-#This script is for the installation of the minimal BCAI. Thus it only installs software and only what is required for this version.
+#This script is for the installation of the minimal iChain. Thus it only installs software and only what is required for this version.
 #It will install the following things:
 #Software-
 #   git
@@ -15,8 +15,8 @@
 #   flask-httpauth
 #   stem
 #   cryptography
-#BCAI Repository in specified directory, or current directory if none specified
-#Onionshare repository in the same directory as the BCAI repository
+#iChain Repository in specified directory, or current directory if none specified
+#Onionshare repository in the same directory as the iChain repository
 #npm packages for user (see packages.json in ML/localUser for a complete list)
 #npm packages for worker (see packages.json in ML/localWorker for a complete list)
 
@@ -38,13 +38,13 @@ else
         exit #exit script execution
     fi
 fi
-if [ -d "BCAI" ] ;#if BCAI folder already exists, remove it
+if [ -d "iChain" ] ;#if iChain folder already exists, remove it
 then
-    read -p $'\e[91mBCAI already exists, remove? \e[0m[Y/N] ' remove
+    read -p $'\e[91miChain already exists, remove? \e[0m[Y/N] ' remove
     case "$remove" in
         [yY][eE][sS]|[yY]) 
-            rm -rf "BCAI"
-            echo -e "\e[92mSuccessfully removed previous BCAI."
+            rm -rf "iChain"
+            echo -e "\e[92mSuccessfully removed previous iChain."
             ;;
         *)
             read -p $'\e[91mDo you just want to install software and npm packages? \e[0m[Y/N] ' remove
@@ -214,7 +214,7 @@ fi
 #Download repo
 if [ "$downloadgit" = true ] ; then
     echo -e "\e[93m----------------------------Downloading github repo.----------------------------\e[0m"
-    if git clone https://github.com/cjohnson57/BCAI_Min.git ; then #if downloaded
+    if git clone https://github.com/cjohnson57/iChain_Min.git ; then #if downloaded
         echo -e "\e[92mGithub repo successfully downloaded."
     else  #problem downloading
         echo -e "\e[91mProblem downlodding repo. Aborting installation."
@@ -231,7 +231,7 @@ else  #problem downloading
 fi
 ###################################Installing npm packages###################################
 #Install npm stuff for localuser
-cd BCAI/ML/localUser/
+cd iChain/ML/localUser/
 echo -e "\e[93m---------------------Installing npm packages for localUser.---------------------\e[0m"
 if npm install ; then #if installed
     echo -e "\e[92mnpm packages for localUser successfully installed."
