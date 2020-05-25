@@ -21,3 +21,5 @@ image.*
 
 /cryptographic/privKey.txt
 /cryptographic/pubKey.txt
+
+*UTC*
