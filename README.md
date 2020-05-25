@@ -1,5 +1,5 @@
-# BCAI_Min
-This is a version of BCAI which only has the minimum files required to run the program and compiled binaries rather than source code to run. This version will be distributed for use.
+# iChain_Min
+This is a version of iChain which only has the minimum files required to run the program and compiled binaries rather than source code to run. This version will be distributed for use.
 
 ## How to install
 Do not clone the repo, just download/copy [installMinimal.bash](installMinimal.bash). Then run installMinimal.bash using:
@@ -10,7 +10,7 @@ This will install all required softwares and this repository as well as the onio
 
 For a full list of things installed, see the comment block at the top of [installMinimal.bash](installMinimal.bash)
 
-Also, place one or more keystore files for the account(s) you want to use in ML/localUser and ML/localWorker
+Also, place one or more keystore files for the account(s) you want to use in [ML/localUser](ML/localUser) and [ML/localWorker](ML/localWorker)
 
 ## How to run provider
 Providers execute ML tasks for users and are paid for their work in ether cryptocurrency.
@@ -53,7 +53,7 @@ This will create a task file named image.zip. Place this image inside [ML/localU
 ## How to run user
 Users upload ML tasks to be performed by providers and pay them in ether cryptocurrency.
 
-In ML/localUser place your docker task file named image.zip. To see how to create this task file, see the previous section.
+In [ML/localUser](ML/localUser) place your docker task file named image.zip. To see how to create this task file, see the previous section.
 
 In the main directory run ```bash startUser.bash``` this will open two terminal tabs:
 
