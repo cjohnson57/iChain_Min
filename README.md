@@ -79,9 +79,11 @@ The following steps must take place for your task to be completed:
 
 6) After receiving your result,  finalize your request, giving a rating to your provider based on the correctness and quality of the result.
 
-## Other info
+## Other important info
 Please do not close any of the terminals or the web page until you have finished/stopped your request or providing.
 
 In the CLI if you get "stuck" in a menu with no back option, press ctrl-C and type "back" then hit enter.
+
+Do not run ```sudo bash cleanFiles.bash``` while you are running the program. It is only meant to clear excess files that may be left over between program runs, especially if you stop the program early (but please don't do that.)
 
 If you have any issues please contact with a copy of log.txt and describe the issue.
