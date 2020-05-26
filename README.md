@@ -82,4 +82,6 @@ The following steps must take place for your task to be completed:
 ## Other info
 Please do not close any of the terminals or the web page until you have finished/stopped your request or providing.
 
+In the CLI if you get "stuck" in a menu with no back option, press ctrl-C and type "back" then hit enter.
+
 If you have any issues please contact with a copy of log.txt and describe the issue.
