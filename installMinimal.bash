@@ -38,12 +38,12 @@ else
         exit #exit script execution
     fi
 fi
-if [ -d "iChain" ] ;#if iChain folder already exists, remove it
+if [ -d "iChain_Min" ] ;#if iChain folder already exists, remove it
 then
     read -p $'\e[91miChain already exists, remove? \e[0m[Y/N] ' remove
     case "$remove" in
         [yY][eE][sS]|[yY]) 
-            rm -rf "iChain"
+            rm -rf "iChain_Min"
             echo -e "\e[92mSuccessfully removed previous iChain."
             ;;
         *)
@@ -231,7 +231,7 @@ else  #problem downloading
 fi
 ###################################Installing npm packages###################################
 #Install npm stuff for localuser
-cd iChain/ML/localUser/
+cd iChain_Min/ML/localUser/
 echo -e "\e[93m---------------------Installing npm packages for localUser.---------------------\e[0m"
 if npm install ; then #if installed
     echo -e "\e[92mnpm packages for localUser successfully installed."
